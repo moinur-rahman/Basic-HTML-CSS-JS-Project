@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0; 
+   box-sizing: border-box;  
+   font-family: 'Josefin Sans', sans-serif;;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/village.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+   
+}
+.logo{
+    width: 25%;
+    text-align: center ;
+}
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.menu a:first-child{
+    color: #00b894;
+}
+
+main{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section{
+  color: #fff;
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0 20px;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+.animate__animated.animate__heartBeat {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;  
+}
+.change_content::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+@keyframes changetext{
+    0%{content: "Dhaka";}
+    20%{content: "Barisal";}
+    40%{content: "Chittagong";}
+    60%{content: "Khulna";}
+    80%{content: "Rangpur";}
+    100%{content: "Shyllet";}
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-emphasis: 1px 1px 1px black;
+}
+section a{
+     padding: 12px 30px;
+     border-radius: 4px;
+     outline: none;
+     text-transform: uppercase;
+     font-size: 13px;
+     font-weight: 500;
+     text-decoration: none;
+     letter-spacing: 1px;
+     transition: all 0.5s ease;
+}
+section .btn1{
+    background:#fff;
+    color: black;
+}
+.btn1:hover{
+    background: #00b894;
+    color: white;
+}
+section .btn2{
+    background: #00b894;
+    color: white;
+}
+.btn2:hover{
+    background:#fff;
+    color: black;
+}

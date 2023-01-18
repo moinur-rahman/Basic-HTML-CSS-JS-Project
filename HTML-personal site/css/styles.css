@@ -1,0 +1,27 @@
+body {
+  background-color: #eaf6f6;
+}
+img{
+    background-color: rgb(136, 218, 173);
+}
+img:hover{
+background-color: gold;
+}
+h1 {
+  color: #66bfbf;
+}
+h3 {
+  color: #66bfbf;
+}
+hr {
+  border-color: grey;
+  border-style: dotted none none;
+  border-width: 5px;
+  width: 5%;
+}
+.Institute {
+color: red;
+}
+.Skills{
+    color: green;
+}
